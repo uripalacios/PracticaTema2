@@ -1,15 +1,23 @@
 <?php
 //mostrar fichero
 //buscar $_SERVER en el manual
-$nombrepagina = $_GET;
-echo $nombrepagina;
-echo basename($_SERVER);
+$nombrepagina = $_SERVER['SCRIPT_NAME'];
+echo basename($nombrepagina);
+echo "<p>";
 
 //mostrar la IP del equipo
+$ipEquipo = $_SERVER['SERVER_NAME'];
+echo $ipEquipo;
+echo "<p>";
 
+//Muestra el Path donde se esta ejecutando
+$pathActual = $_SERVER['ORIG_PATH_INFO'];
+echo $pathActual;
+echo "<p>";
 
-
-// calcula la fecha
+// Muestra la hora actual
+$horaActual = date();
+echo $horaActual;
 
 
 echo "<br>";

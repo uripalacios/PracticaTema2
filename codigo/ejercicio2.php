@@ -8,7 +8,7 @@ echo "<p>";
 //Compruebo si es numerica
 if(is_numeric($recibida)==1){
     echo "Es numérico";
-    
+    $recibida = $recibida + 0 ;
     echo "<p>";
     if(is_integer($recibida)==1){
         echo "Es entero";
